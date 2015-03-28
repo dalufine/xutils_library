@@ -25,7 +25,9 @@ public class PriorityExecutor implements Executor {
 
     private final BlockingQueue<Runnable> mPoolWorkQueue = new PriorityObjectBlockingQueue<Runnable>();
     private final ThreadPoolExecutor mThreadPoolExecutor;
-
+    /**
+     * 自定义的Executor
+     */
     public PriorityExecutor() {
         this(CORE_POOL_SIZE);
     }

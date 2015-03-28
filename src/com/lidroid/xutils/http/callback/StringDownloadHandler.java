@@ -47,6 +47,7 @@ public class StringDownloadHandler {
                 current += OtherUtils.sizeOfString(line, charset);
                 if (callBackHandler != null) {
                     if (!callBackHandler.updateProgress(total, current, false)) {
+                    	//break之后，方法之后的过程都不运行，即下面的if (callBackHandler != null)的不会运行
                         break;
                     }
                 }

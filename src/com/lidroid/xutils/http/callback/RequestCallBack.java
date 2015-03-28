@@ -27,8 +27,13 @@ import com.lidroid.xutils.http.ResponseInfo;
  */
 public abstract class RequestCallBack<T> {
 
+	/**
+	 * 界面刷新频率，即多久刷新进度条的数值
+	 */
     private static final int DEFAULT_RATE = 1000;
-
+    /**
+	 * 界面刷新频率，即多久刷新进度条的数值
+	 */
     private static final int MIN_RATE = 200;
 
     private String requestUrl;
